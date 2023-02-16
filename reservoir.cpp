@@ -91,6 +91,51 @@ double get_max_east( ) {
 }
 
 
+//Task C
+  std::string compare_basins(std::string date){
+  std::string date_time;
+  std::string East,West,Equal;
+  double eastSt,eastEl,westSt,westEl;
+  std::ifstream fin("Current_Reservoir_Levels.tsv");
+  if (fin.fail()) {
+    std::cerr << "File cannot be opened for reading." << std::endl;
+    exit(1); 
+  }
+
+  std::string junk;
+  getline(fin, junk);
+
+  while (fin >> date_time >> eastSt>>eastEl>>westSt>>westEl) {
+
+    fin.ignore(INT_MAX, '\n'); 
+
+    if (date == date_time) {
+      if (eastEl>westEl){
+        const char* ch = "East";
+        std::string East = ch;
+        return East;}
+      if (eastEl<westEl){
+        const char* ch = "West";
+        std::string West = ch;
+        return West;}
+      if (eastEl = westEl){
+        const char* ch = "Equal";
+        std::string Equal = ch;
+        return Equal;
+        }
+       
+    }
+  }
+
+  fin.close();
+
+  return East;
+  return West;
+  return Equal;
+
+}
+
+
 
 
 
