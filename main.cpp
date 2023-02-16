@@ -16,5 +16,13 @@ int main()
  //Test for task B
  	std::cout<<"Minimum storage in East basin: "<<" " <<get_min_east( )<<" "<<"billion gallons"<<"\n\n";
 	std::cout<<"Maximum storage in East basin: "<<" " <<get_max_east( )<<" "<<"billion gallons"<<"\n\n";
+	
+//Test for task C;
+	std::cout<<"06/30/2018"<<" " <<compare_basins("06/30/2018")<<"\n\n";
+	std::cout<<"05/30/2018"<<" " <<compare_basins("05/30/2018")<<"\n\n";
+	
+//Test for task D
+
+
   return 0;
 }
