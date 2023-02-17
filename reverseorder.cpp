@@ -6,6 +6,7 @@
 #include <fstream>
 #include <iostream>
 #include <string>
+#include "reservoir.h"
 #include "reverseorder.h"
 
 void reverse_oreder(std::string date1, std::string date2){
@@ -45,7 +46,7 @@ void reverse_oreder(std::string date1, std::string date2){
   for (int a = i - 1; a>=0; a--)
     {
       std::cout << str[a];
-      std::cout << "\t" << West_El[a] << " ft" << std::endl;
+      std::cout << "\t"<<West_El[a] <<" ft"<< std::endl;
     }
 
 }
