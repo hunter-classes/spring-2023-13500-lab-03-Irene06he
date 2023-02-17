@@ -5,6 +5,7 @@
 #include<string>
 #include<iostream>
 #include "reservoir.h"
+#include "reverseorder.h"
 
 int main()
 {
@@ -19,9 +20,15 @@ int main()
 	
 //Test for task C;
 	std::cout<<"06/30/2018"<<" " <<compare_basins("06/30/2018")<<"\n\n";
-	std::cout<<"05/30/2018"<<" " <<compare_basins("05/30/2018")<<"\n\n";
+	std::cout<<"09/13/2018"<<" " <<compare_basins("09/13/2018")<<"\n\n";
+	std::cout<<"04/30/2018"<<" " <<compare_basins("04/30/2018")<<"\n\n";
 	
 //Test for task D
+	std::cout<<"\n\n";
+	reverse_oreder("09/10/2018", "09/13/2018");
+	std::cout<<"\n\n";
+	reverse_oreder("05/29/2018", "06/02/2018");
+	
 
 
   return 0;
