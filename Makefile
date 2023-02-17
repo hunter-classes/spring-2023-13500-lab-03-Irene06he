@@ -10,7 +10,7 @@ main.o: main.cpp reservoir.h reverseorder.h
 reservoir.o: reservoir.cpp reservoir.h
 	g++ -c reservoir.cpp
 
-reverseorder.o: reverseorder.cpp reverseorder.h
+reverseorder.o: reverseorder.cpp reverseorder.h reservoir.h
 	g++ -c reverseorder.cpp
 
 clean:
